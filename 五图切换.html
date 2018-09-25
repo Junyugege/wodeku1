@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		div {
+			text-align: center;
+			margin-top: 100px;
+		}
+		img {
+			width: 800px;
+		}
+		button {
+			width: 100px;
+		}
+	</style>
+
+</head>
+<body>
+	<div>
+		<img id="img" src="images/t0.jpg" alt="">
+		<button id="btn">切换</button>
+	</div>
+	<script>
+		var btn = document.getElementById('btn');
+		var img = document.getElementById('img');
+		var num = 0;
+		btn.onclick = function() {
+                 num = (num+1)%6;
+			switch(num) {
+				
+				case 0:
+					img.src = 'images/t0.jpg';
+					break;
+				 case 1:
+					img.src = 'images/t1.jpg';
+					break;
+				 case 2:
+					img.src = 'images/t2.jpg';
+					break;
+				 case 3:
+					img.src = 'images/t3.jpg';
+					break;
+				 case 4:
+					img.src = 'images/t4.jpg';
+					break;
+				 case 5:
+					img.src = 'images/t5.jpg';
+					break;
+			}
+			
+
+		}
+	</script>
+</body>
+</html>
